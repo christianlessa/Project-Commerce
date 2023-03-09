@@ -59,18 +59,29 @@ input {
   padding: 20px;
 }
 
+.release::after {
+  content: "";
+  display: flex;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #6c63ff;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
 .container-release {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 50px 0px;
 }
 
 .release-image {
-  width: 150px;
+  width: 180px;
   height: auto;
   border: solid rgb(0, 0, 0) 1px;
   display: flex;
   padding: 5px;
+  margin: 10px;
 }
 
 .release-img-button {
