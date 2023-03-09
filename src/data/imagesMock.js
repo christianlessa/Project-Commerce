@@ -14,24 +14,28 @@ import background from '../images/header/fundo.jpeg';
 const allImages = [
   {
     id: 1,
+    title: "Roupa Rosa",
     img: imgPink1,
     imgOver: imgPink2,
     imgOut: imgPink1,
   },
   {
-    id: 1,
+    id: 2,
+    title: "Roupa Cinza",
     img: imgGrey1,
     imgOver: imgGrey2,
     imgOut: imgGrey1,
   },
   {
-    id: 1,
+    id: 3,
+    title: "Roupa Violeta",
     img: imgViolet1,
     imgOver: imgViolet2,
     imgOut: imgViolet1,
   },
   {
-    id: 1,
+    id: 4,
+    title: "Roupa Laranja",
     img: imgOrange1,
     imgOver: imgOrange2,
     imgOut: imgOrange1,
