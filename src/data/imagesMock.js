@@ -15,6 +15,7 @@ const allImages = [
   {
     id: 1,
     title: "Roupa Rosa",
+    price: "R$:129,99",
     img: imgPink1,
     imgOver: imgPink2,
     imgOut: imgPink1,
@@ -22,6 +23,7 @@ const allImages = [
   {
     id: 2,
     title: "Roupa Cinza",
+    price: "R$:149,99",
     img: imgGrey1,
     imgOver: imgGrey2,
     imgOut: imgGrey1,
@@ -29,6 +31,7 @@ const allImages = [
   {
     id: 3,
     title: "Roupa Violeta",
+    price: "R$:139,99",
     img: imgViolet1,
     imgOver: imgViolet2,
     imgOut: imgViolet1,
@@ -36,6 +39,7 @@ const allImages = [
   {
     id: 4,
     title: "Roupa Laranja",
+    price: "R$:119,99",
     img: imgOrange1,
     imgOver: imgOrange2,
     imgOut: imgOrange1,
