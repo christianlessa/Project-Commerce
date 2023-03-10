@@ -33,7 +33,7 @@ function Releases() {
         {
           imageSrc.map((image) => {
             return (
-              <div className="release-img-button">
+              <div className="release-box">
                 <img
                   src={image.img}
                   alt={image.title}
@@ -42,6 +42,7 @@ function Releases() {
                   onMouseOut={ () => handleMouseOut(image.id, image.imgOut) }
                 />
                 <h3>{image.title}</h3>
+                <p>{image.price}</p>
                 <button
                   type="button"
                 >
