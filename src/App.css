@@ -90,6 +90,7 @@ input:hover {
 
 .release-box {
   text-align: center;
+  cursor: pointer;
 }
 
 .release-box button {

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { allImages } from '../data/imagesMock';
+import Header from './Header';
 
 function Releases() {
   const [imageSrc, setImageSrc] = useState(allImages);
@@ -28,6 +29,7 @@ function Releases() {
 
   return (
     <>
+      <Header />
       <h1 className="release">Lançamentos</h1>
       <div className="container-release">
         {
