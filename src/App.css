@@ -1,3 +1,5 @@
+/* HEADER */
+
 .App-header {
   background-color: rgb(201, 157, 27);
   color: white;
@@ -8,12 +10,16 @@
   text-align: center;
 }
 
-a {
+.App-header a {
   font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   color:azure;
   text-decoration: none;
-  
 }
+
+.App-header a:hover {
+  color:rgba(0, 0, 0, 0.958);
+}
+
 
 .App-header button {
   border: none;
@@ -47,4 +53,66 @@ input {
   border-radius: 8px;
   border: none;
   height: 20px;
+}
+
+input:hover {
+  background-color: #ffffffe4;
+}
+
+/* RELEASE */
+
+.release {
+  text-align: center;
+  color: #fff;
+  -webkit-text-stroke: 2px black;
+  padding: 20px;
+}
+
+.release::after {
+  content: "";
+  display: flex;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #6c63ff;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.container-release {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.release-image {
+  width: 180px;
+  height: auto;
+  border: solid rgb(0, 0, 0) 1px;
+  display: flex;
+  padding: 5px;
+  margin: 10px;
+}
+
+.release-box {
+  text-align: center;
+  cursor: pointer;
+}
+
+.release-box button {
+  border: none;
+  padding: 10px;
+  background-color: #6c63ff;
+  border-radius: 10px;
+}
+
+.release-box button:hover {
+  background-color: rgb(255, 123, 0);
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.release-box p {
+  color: rgb(157, 148, 14);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

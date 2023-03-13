@@ -14,7 +14,7 @@ function Header() {
       />
       </div>
       <header className="App-header">
-        <a href="http://www.google.com.br/">NEWS DA SEMANA</a>
+        <a href="http://localhost:3000/release">NEWS DA SEMANA</a>
         <a href="http://www.google.com.br/">LIQUIDAÇÃO</a>
         <a href="http://www.google.com.br/">COLEÇÃO FESTAS</a>
         <a href="http://www.google.com.br/">FEMININO</a>
