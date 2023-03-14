@@ -1,4 +1,5 @@
 import { headerImages } from "../data/imagesMock";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -14,11 +15,11 @@ function Header() {
       />
       </div>
       <header className="App-header">
-        <a href="http://localhost:3000/release">NEWS DA SEMANA</a>
-        <a href="http://www.google.com.br/">LIQUIDAÇÃO</a>
-        <a href="http://www.google.com.br/">COLEÇÃO FESTAS</a>
-        <a href="http://www.google.com.br/">FEMININO</a>
-        <a href="http://www.google.com.br/">CONTATO</a>
+        <Link to="/release">NEWS DA SEMANA</Link>
+        <Link to="/saleof">LIQUIDAÇÃO</Link>
+        <Link to="/collection">COLEÇÃO FESTAS</Link>
+        <Link to="/feminine">FEMININO</Link>
+        <Link to="/contact">CONTATO</Link>
         <label htmlFor="pesquisa" for="pesquisar">
           <input
             type="text"
