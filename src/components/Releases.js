@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { allImages } from '../data/imagesMock';
 import Header from './Header';
 
@@ -13,7 +14,6 @@ function Releases() {
       return image;
     });
     setImageSrc(updatedImage);
-    console.log("entrou id é: ", imageId, "estado: ", imageSrc)
   }
 
   function handleMouseOut(imageId, imageOut) {
@@ -24,7 +24,6 @@ function Releases() {
       return image;
     });
     setImageSrc(updatedImage);
-    console.log("saiu id é: ", imageId, "estado: ", imageSrc)
   }
 
   return (
@@ -36,13 +35,15 @@ function Releases() {
           imageSrc.map((image) => {
             return (
               <div className="release-box">
-                <img
-                  src={image.img}
-                  alt={image.title}
-                  className="release-image"
-                  onMouseOver={ () => handleMouseOver(image.id, image.imgOver) }
-                  onMouseOut={ () => handleMouseOut(image.id, image.imgOut) }
-                />
+                <Link to="/description">
+                  <img
+                    src={image.img}
+                    alt={image.title}
+                    className="release-image"
+                    onMouseOver={ () => handleMouseOver(image.id, image.imgOver) }
+                    onMouseOut={ () => handleMouseOut(image.id, image.imgOut) }
+                  />
+                </Link>
                 <h3>{image.title}</h3>
                 <p>{image.price}</p>
                 <button
