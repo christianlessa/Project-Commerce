@@ -1,5 +1,6 @@
 import { headerImages } from "../data/imagesMock";
 import { Link } from "react-router-dom";
+import searchIcon from "../images/icons/searchIcon.svg"
 
 function Header() {
   return (
@@ -20,7 +21,7 @@ function Header() {
         <Link to="/collection">COLEÇÃO FESTAS</Link>
         <Link to="/feminine">FEMININO</Link>
         <Link to="/contact">CONTATO</Link>
-        <label htmlFor="pesquisa" for="pesquisar">
+        <label htmlFor="pesquisa" for="pesquisar" className="label-input-button">
           <input
             type="text"
             id="pesquisa"
@@ -31,7 +32,7 @@ function Header() {
             type="button"
             id="pesquisar"
           >
-            ir
+            <img src={searchIcon} alt="iconi procurar" />
           </button>
         </label>
       </header>

@@ -20,14 +20,27 @@
   color:black;
 }
 
-
 .App-header button {
   border: none;
-  border-radius: 3px;
-  margin-left: 8px;
-  height: 22px;
-  width: 25px;
+  background-color: transparent;
   cursor: pointer;
+}
+
+.label-input-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.App-header button img {
+  width: 15px;
+  height: auto;
+  padding: 5px;
+}
+
+.App-header button img:hover {
+  background-color: #c8c5ff;
+  border-radius: 15px;
 }
 
 .background-header {
@@ -41,7 +54,7 @@
 .image-logo {
   width: 130px;
   height: 130px;
-  margin-left: 5%;
+  margin-left: 8%;
   border-top: solid rgb(201, 157, 27) 5px;
   border-right: solid rgb(201, 157, 27) 5px;
   border-left: solid rgb(201, 157, 27) 5px;
