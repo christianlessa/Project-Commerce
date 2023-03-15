@@ -82,6 +82,44 @@ input:hover {
   border-radius: 15px;
 }
 
+/* COMPONENT BANNER*/
+
+.banner-container {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+.banner-container h3, p {
+  margin: 0;
+  color: #cfa643;
+  font-size: 13px
+}
+
+.banner-container img {
+  width: 30px; 
+  height: auto;
+  background-color: #ffffffde;
+  padding: 0px;
+}
+
+.banner-back-img {
+  border-radius: 50%;
+  background-color: #edededd5;
+  padding: 10px;
+}
+
+.banner-img-text {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.banner-text {
+  margin-left: 5px;
+}
+
 /* COMPONENT RELEASE */
 
 .release {
@@ -178,6 +216,7 @@ footer {
 .footer-contacts img {
   width: 25px;
   height: auto;
+  margin-top: 18px
 }
 
 .footer-links {
