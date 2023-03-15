@@ -18,10 +18,12 @@ function Header() {
           backgroundImage: `url(${headerImages.background})`,
         }}
       >
-      <img 
-        src={headerImages.newLogoTonha} alt="logo"
-        className="image-logo"
-      />
+      <Link to="/" className="">
+        <img 
+          src={headerImages.newLogoTonha} alt="logo"
+          className="image-logo"
+        />
+      </Link>
       </div>
       <header className="App-header">
         <Link to="/release">NEWS DA SEMANA</Link>

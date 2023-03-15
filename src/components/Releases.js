@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import appContext from '../context';
-import { Link } from 'react-router-dom';
-
+import { Link, useHistory } from 'react-router-dom';
 import Header from './Header';
 
 function Releases() {
   const { imageSrc, setImageSrc } = useContext(appContext);
+  const { location: { pathname } } = useHistory();
 
   function handleMouseOver(imageId, imageOver) {
     const updatedImage = imageSrc.map((image) => {
@@ -29,7 +29,10 @@ function Releases() {
 
   return (
     <>
-      <Header />
+      {
+        pathname === "/release"
+        && <Header />
+      }
       <h1 className="release">Lançamentos</h1>
       <div className="container-release">
         {
