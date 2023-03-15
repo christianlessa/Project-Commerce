@@ -19,7 +19,7 @@ function Header() {
         }}
       >
       <img 
-        src={headerImages.tonha} alt="logo"
+        src={headerImages.newLogoTonha} alt="logo"
         className="image-logo"
       />
       </div>
