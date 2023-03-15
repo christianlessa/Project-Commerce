@@ -86,9 +86,14 @@ input:hover {
 /* COMPONENT BANNER*/
 
 .banner-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 3rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  align-items: center;
+  height: 100px;
+  width: auto;
+  justify-content: center;
+  margin: 0px 100px;
 }
 
 .banner-container h3, p {
@@ -100,13 +105,13 @@ input:hover {
 .banner-container img {
   width: 30px; 
   height: auto;
-  background-color: #edededd5;
+  background-color: #ddddddd5;
   padding: 0px;
 }
 
 .banner-back-img {
   border-radius: 50%;
-  background-color: #edededd5;
+  background-color: #ddddddd5;
   padding: 10px;
 }
 
