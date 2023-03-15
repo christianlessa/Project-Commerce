@@ -10,6 +10,8 @@ import imgOrange2 from '../images/clothes/imgOrange2.jpeg';
 import logo from '../images/header/logo.jpeg';
 import logoTonha from '../images/header/logoTonha.jpeg';
 import background from '../images/header/fundo.jpeg';
+import newLogoTonha from '../images/header/newLogoTonha.jpeg';
+
 
 const allImages = [
   {
@@ -50,6 +52,7 @@ const headerImages = {
   id: 1,
   logo: logo,
   tonha: logoTonha,
+  newLogoTonha: newLogoTonha,
   background: background,
 };
 
