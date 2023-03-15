@@ -1,8 +1,16 @@
+import { useContext } from "react";
 import { headerImages } from "../data/imagesMock";
 import { Link } from "react-router-dom";
 import searchIcon from "../images/icons/searchIcon.svg"
+import appContext from "../context/index";
 
 function Header() {
+  const { setInputValue } = useContext(appContext);
+
+  function handleInput({ target: { value }}) {
+    setInputValue(value)
+  }
+
   return (
     <div>
       <div className="background-header"
@@ -27,7 +35,8 @@ function Header() {
             id="pesquisa"
             name="pesquisa"
             placeholder="Olá, oque procura?"
-          />
+            onChange={ handleInput }
+            />
           <button 
             type="button"
             id="pesquisar"

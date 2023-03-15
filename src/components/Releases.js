@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useContext } from "react";
+import appContext from '../context';
 import { Link } from 'react-router-dom';
-import { allImages } from '../data/imagesMock';
+
 import Header from './Header';
 
 function Releases() {
-  const [imageSrc, setImageSrc] = useState(allImages);
+  const { imageSrc, setImageSrc } = useContext(appContext);
 
   function handleMouseOver(imageId, imageOver) {
     const updatedImage = imageSrc.map((image) => {
