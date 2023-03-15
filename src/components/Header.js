@@ -18,7 +18,7 @@ function Header() {
           backgroundImage: `url(${headerImages.background})`,
         }}
       >
-      <Link to="/" className="">
+      <Link to="/">
         <img 
           src={headerImages.newLogoTonha} alt="logo"
           className="image-logo"
