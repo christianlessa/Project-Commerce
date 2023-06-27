@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { headerImages } from "../data/imagesMock";
 import { Link } from "react-router-dom";
-import searchIcon from "../images/icons/searchIcon.svg"
 import appContext from "../context/index";
+import { FiSearch, FiUser } from "react-icons/fi";
 
 function Header() {
   const { setInputValue } = useContext(appContext);
@@ -32,6 +32,12 @@ function Header() {
         <Link to="/feminine">FEMININO</Link>
         <Link to="/contact">CONTATO</Link>
         <label htmlFor="pesquisa" for="pesquisar" className="label-input-button">
+          <button 
+            type="button"
+            id="button-perfil"
+          >
+            <FiUser />
+          </button> 
           <input
             type="text"
             id="pesquisa"
@@ -41,9 +47,9 @@ function Header() {
             />
           <button 
             type="button"
-            id="pesquisar"
+            id="button-pesquisar"
           >
-            <img src={searchIcon} alt="iconi procurar" />
+            <FiSearch />
           </button>
         </label>
       </header>
